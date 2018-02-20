@@ -29,14 +29,17 @@ import org.osgl.http.H;
 import org.osgl.http.H.Method;
 import org.osgl.mvc.result.Result;
 import org.osgl.util.C;
+import osgl.version.Version;
+import osgl.version.Versioned;
 
 import java.lang.annotation.Annotation;
 import java.util.Map;
 import javax.ws.rs.*;
 
+@Versioned
 public class JaxRsPlugin extends ControllerPlugin {
 
-
+    public static final Version VERSION = Version.of(JaxRsPlugin.class);
 
     @Override
     protected boolean noDefaultPath() {
@@ -45,7 +48,7 @@ public class JaxRsPlugin extends ControllerPlugin {
 
     @Override
     protected Map<Class<? extends Annotation>, Method> annotationMethodLookup() {
-        return C.map(
+        return C.Map(
                 GET.class, Method.GET,
                 POST.class, Method.POST,
                 PUT.class, Method.PUT,
