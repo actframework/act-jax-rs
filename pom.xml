@@ -20,7 +20,7 @@
 
   <artifactId>act-jax-rs</artifactId>
   <packaging>jar</packaging>
-  <version>1.0.2-SNAPSHOT</version>
+  <version>1.0.2</version>
 
   <name>ACT JAX-RS</name>
   <description>Support JAX-RS in ActFramework</description>
