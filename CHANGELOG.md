@@ -1,5 +1,8 @@
 # Act-JAX-RS Change Log
 
+1.0.4 - 19/Jun/2018
+* update act to 1.8.8-RC10
+
 1.0.3 - 19/May/2018
 * update act to 1.8.8-RC5
 
